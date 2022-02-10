@@ -1,5 +1,16 @@
 <% if notice %>
-<p class="alert alert-primary"><%= notice%></p>
-<% elsif alert %>
-<p class="alert alert-danger"><%= alert%></p>
+	<div class='alert alert-success'>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+		<%= notice %>
+	</div>
+<% end %>
+<% if alert %>
+	<div class='alert alert-danger'>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+		<%= alert %>
+	</div>
 <% end %>
